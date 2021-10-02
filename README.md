@@ -15,15 +15,17 @@ Authentication is Done by very famous Passport Library.
 - Passport
 - Chart.js
 
+## How Its Looks Like
 
+Login Page
+![Login-Page](./myFolder/Login.png)
+SignUp - Page
+![Signup-Page](./myFolder/signup.png)
+After Login Showing User's Data
+![User-1](./myFolder/user1.png)
+Showing Different User's Data 
 
-
-
-
-
-
-
-
+![User-2](./myFolder/user2.png)
 
 ## Setup
 
