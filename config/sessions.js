@@ -16,7 +16,7 @@ router.use(
     saveUninitialized: false,
     store: sessionStore,
     cookie: {
-      maxAge: 2000 * 60,
+      maxAge: 1000 * 60*60,
     },
   })
 );
