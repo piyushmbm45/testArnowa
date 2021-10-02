@@ -8,7 +8,7 @@
     background-color: hsl(200, 80%, 90%);
 }
 
-.img-fluid{
+.img-fluid,.user{
     margin-left: 40%;
 }
 

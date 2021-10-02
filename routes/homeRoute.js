@@ -24,7 +24,7 @@ router.use(express.static("public"));
 router.use(passport.initialize());
 router.use(passport.session());
 
-router.get("/register", (req, res) => {
+router.get("/register", checkNotAuthenticated ,(req, res) => {
   res.render("register");
 });
 
@@ -96,8 +96,6 @@ router.post("/logout", (req, res, next) => {
 
 // secret route
 router.get("/secret", checkAuthenticated, (req, res) => {
-  const bar_data = req.user.barData;
-    const pie_data = req.user.pieData;
   res.render("secret", { user: req.user });
 });
 
