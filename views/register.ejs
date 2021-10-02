@@ -1,0 +1,41 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="d-flex flex-column align-items-center">
+    <div class="logo-div container-fluid">
+        <img class="img-fluid py-5" src="/images/logo.webp" alt="logo" height="200px" width="300px">
+    </div>
+    <div class="container">
+        <div class="pt-5 pb-2 heading_login">
+            <h1 class="text-info">Sign Up</h1>
+        </div>
+        <div class="my-3">
+            <form action="/register" method="post">
+                <div class="my-2">
+                    <label for="name">Enter Your Name</label>
+                    <input class="form-control danger" type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="my-2">
+                    <label for="emailId">Enter Your E-Mail</label>
+                    <input class="form-control" type="email" name="username" placeholder="Email Id" required>
+                </div>
+                <div class="my-2">
+                    <label for="password">Enter Password</label>
+                    <input class="form-control" type="password" name="password" placeholder="Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required>
+                </div>
+                <button class="btn btn-info my-4 btn-block" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    
+
+
+    <%- include('./partials/footer.ejs') %>

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.logo-div{
+    background-color: hsl(200, 80%, 90%);
+}
+
+.img-fluid{
+    margin-left: 40%;
+}
+
+.heading_login{
+    margin-left: 45%;
+}
